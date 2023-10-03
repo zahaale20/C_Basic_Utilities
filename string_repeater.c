@@ -6,11 +6,8 @@ int main(int count, char *args[]) { // Parameters: number of arguments, argument
       return 1; // return 1 shows there is an error
    }
 
-   printf("count: %s\n", args[1]);
-   printf("string: %s\n", args[2]);
-
    char * endptr;
-   int num = strtol(args[2], &endptr, 10);
+   int num = strtol(args[1], &endptr, 10);
    
    int i;
    for(i = 0; i < num; i++){
