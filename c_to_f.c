@@ -35,7 +35,7 @@ int main(void) {
     // User input
     printf("Enter a value in Celsius: ");
     if (scanf("%lf", &celsius) != 1) { // Scan for a double value, check if it is a double, that 1 == 1, and store it at the address of celsius,
-        fprintf(stderr, "Invalid input. Please enter a number.\n"); // Use fprintf to print error message for having an invalid input
+        printf("Invalid input. Please enter a number.\n"); // Use printf to print error message for having an invalid input
         return 1;
     }
     
