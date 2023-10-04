@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void printFunction(int count, char* string) {
    // Use a for loop to print the inputted string a 'count' number of times
@@ -12,8 +13,7 @@ int containsNewLine(char *string) {
    // Iterate through each character of the inputted string, checking to see if there is a newline character
    int j;
    for(j = 0; j < strlen(string); j++){
-      printf("%c", *string);
-      if(*string == '\n'){
+      if(string[j] == '\n'){
          return 1; // Return true (1) if there is a newline character in the string
       }
    }
@@ -34,9 +34,12 @@ int main(int argc, char* args[]) { // Parameters: count of arguments, array of p
          printFunction(num, args[2]); // Print Function to print a string a 'num' number of times
          return 0; // return 0
       } else {
-            printf("Error: Second argument shouldn't contain a newline character.");
+            printf("Error: Second argument shouldn't contain a newline character.\n");
       }
    } else { // Print an error message if the first argument is non-negative or not a valid numbe
-      printf("Error: First Argument must be a non-negative number.");
+      printf("Error: First Argument must be a non-negative number.\n");
    }
 }
+
+// Used ChatGPT to learn how to iterate through a string in C. I ended up discovering the string.h that declares and allows me
+// to use strlen to find the length of a string.
