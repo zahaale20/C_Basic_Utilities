@@ -23,7 +23,7 @@ int main(void)
 {
    int first = 357;
    int second = 0;
-
+h
    start();
    function_one(first);
    function_two(second);

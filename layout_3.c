@@ -9,7 +9,9 @@ void function_one()
    int nums[5];
    int mid = 10;
 
-   for (int i = 0; i < 5; i++) {
+   int i;
+
+   for (i = 0; i < 5; i++) {
       nums[i] = i;
    }
 
