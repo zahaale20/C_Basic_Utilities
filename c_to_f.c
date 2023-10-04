@@ -34,6 +34,7 @@ int main(void) {
 
     // User input
     printf("Enter a value in Celsius: ");
+
     if (scanf("%lf", &celsius) != 1) { // Scan for a double value, check if it is a double, that 1 == 1, and store it at the address of celsius,
         printf("Invalid input. Please enter a number.\n"); // Use printf to print error message for having an invalid input
         return 1;
@@ -54,3 +55,21 @@ int main(void) {
 // 2. Unit type - This program assumes user input for celsius can be any number. I decided to use double data type instead of the
 // float data type since it has more storage. It may be better to use a float since it costs less in regards to memory usage.
 // For reference, Float: (4 bytes, 7 decimals of precision) and Double: (8 bytes, 15 decimals of precision)
+
+// ChatGPT Use:
+// 1. prompt: "how do i scan input in C"
+//    output: 
+    /*
+    In the C programming language, you can use the scanf function to scan and read input from the user. 
+    Here's a basic example of how to use scanf to read an integer input:
+
+    #include <stdio.h>
+
+    int main() {
+        int number;
+        printf("Enter an integer: ");
+        scanf("%d", &number);
+        printf("You entered: %d\n", number);
+        return 0;
+    }
+    */
