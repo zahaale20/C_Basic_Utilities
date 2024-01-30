@@ -1,9 +1,7 @@
-# C_Unix_Utility_Programs
-The "C_Unix-Utility_Programs" GitHub repository contains two C programs, each replicating a classic Unix utility. These programs are focused on text processing and are designed to operate under specific constraints to mimic Unix system behaviors.
+# C_Basic_Utility
+This GitHub repository, "C_BasicUtilities," contains two C programs, each focusing on basic but essential functionalities in C programming. These programs serve as practical exercises in fundamental C programming concepts and controls.
 
-Word Count (word_count.c): This program functions similarly to the Unix 'wc' utility, counting characters, words, and lines in an input stream. It defines a word as a sequence of characters separated by whitespace and a line as a sequence ending in a newline character. The program is structured to read input one character at a time, without using dynamic memory allocation.
+Celsius to Fahrenheit Converter (c_to_f.c): This program is a straightforward tool for converting temperatures from Celsius to Fahrenheit, following the formula celsius * 1.8 = fahrenheit - 32. The user is prompted to input a Celsius value, which is then converted to Fahrenheit using a dedicated function. The program additionally outputs weather-related statements based on the Fahrenheit temperature, according to predefined temperature ranges. This program is not just a demonstration of basic arithmetic and input/output in C, but also includes conditional statements and function usage.
 
-Unique Lines (unique.c): Modeled after the Unix 'uniq' utility, this program filters out consecutive duplicate lines from its input. It reads input line by line, using the getline function, and prints each unique line to the output. The focus is on efficient input handling and comparison without explicit dynamic memory allocation.
-
-Both programs are examples of direct, low-level text processing in C, demonstrating efficient memory usage and algorithmic problem-solving. The repository serves as a practical application of C programming for system-level text manipulation tasks.
+String Repeater (string_repeater.c): This program takes two command-line arguments: a non-negative number and a single-line string. It prints the provided string on the screen the specified number of times. Key aspects of this program include validating the number of arguments, ensuring the first argument is a non-negative number, and converting a string representation of a number into an integer using strtol() for safer error handling. This exercise underlines the importance of input validation, loop control, and safe conversion practices in C programming.
 
